@@ -125,18 +125,11 @@
 }
 
 .slim-lin{
-	background-color: rgba(130,131,133,.5);
-	width: 77%;
-	height: 1px;
-	margin: 10px 0 0 0;
+	display: none;
 }
 
 .slim-lin2{
-	background-color: #06d07b;
-	width: 30%;
-	height: 2px;
-	margin: 20px 0 0 -218px;
-	display: block;	
+	display: none;	
 }
 
 
@@ -329,6 +322,7 @@ footer{
 /*RESPONSIVO 960*********************************************************************************/
 @media(min-width:960px){
 	.btn-prod{
+		display: block !important;
 		background-color: #fdf0f6 !important;
 		color: #d81b5b !important;
 		border: 2px solid #fdf0f6 !important;
@@ -362,14 +356,14 @@ footer{
 		float: left;
 	}
 
-	.btn-slim{
+	/*.btn-slim{		
 		background-color: #d81b5b !important;
 		color: #fff !important;
 		border: 2px solid #d81b5b !important;
 		cursor: pointer;	
-		margin: 0;
+		margin: 40px 0 0 0;
 		font-size: 13px !important;
-	}
+	}*/
 
 	.footer1 img{
 		float: left;
@@ -383,17 +377,35 @@ footer{
 	}
 
 	.btn-slim{
+		display: block !important;
 		background-color: #d81b5b !important;
 		color: #fff !important;
 		border: 2px solid #d81b5b !important;
 		cursor: pointer;	
-		margin: -50px 0 0 0;
+		margin: 0;
 		font-size: 13px !important;
 	}
 
 	.btn-slim:hover{
 		background: none !important;	
 		color: #d81b5b !important;
+	}
+
+	.slim-lin{
+		display: block;
+		background-color: rgba(130,131,133,.5);
+		width: 77%;
+		height: 1px;
+		margin: 10px 0 0 0;
+	}
+
+	.slim-lin2{
+		display: block;
+		background-color: #06d07b;
+		width: 30%;
+		height: 2px;
+		margin: 20px 0 0 -218px;
+		display: block;	
 	}
 
 
